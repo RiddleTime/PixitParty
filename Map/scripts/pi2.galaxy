@@ -1,0 +1,62 @@
+include "scripts/util";
+
+include "scripts/player/players";
+
+include "scripts/waveRunner/waveRunner";
+
+
+static const string b_version = "1.00";
+
+
+bool initView(bool testConds, bool runActions) {
+    playergroup active = PlayerGroupActive();
+    int playerIndex;
+
+    while (true) {
+        playerIndex = PlayerGroupNextPlayer(active, playerIndex);
+        if (playerIndex < 0) { break; }
+    }
+
+    PlayerGroupLoopBegin(active);
+    for (; !PlayerGroupLoopDone(); PlayerGroupLoopStep()) {
+        playerIndex = PlayerGroupLoopCurrent();
+        if (PlayerType(playerIndex) == c_playerTypeComputer) {
+            enemyPlayerIndex = playerIndex;
+            continue;
+        }
+
+        CameraUseHeightSmoothing(playerIndex , true);
+        CameraLockInput(playerIndex, true);
+        VisRevealArea(playerIndex, RegionEntireMap(), 0, false);
+    }
+    PlayerGroupLoopEnd(); 
+
+    return true;
+}
+static void customizeEnvironment() {
+    // SoundPlayForPlayer(SoundLink("WeevSound", 0), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
+}
+
+void main() {
+    TriggerAddEventMapInit(TriggerCreate("initRealPlayers")); 
+
+    debug("View initialization.");
+    TriggerAddEventMapInit(TriggerCreate("initView")); 
+
+    debug("Let's go!");
+    TriggerAddEventMapInit(TriggerCreate("initGame"));
+
+    debug("WaveRunner initiating.");
+    TriggerAddEventMapInit(TriggerCreate("initWaveRunner"));
+}
+
+bool initGame(bool testConds, bool runActions) {
+    // customizeEnvironment();
+
+    message("Welcome to Escape The Pixit!");
+    message("Place of dreams and salt");
+    message("Reach the end of the map!");
+
+    debug(b_version); 
+    return true;
+}

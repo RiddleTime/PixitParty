@@ -1,0 +1,40 @@
+include "scripts/waveRunner/waveRunnerData";
+include "scripts/waveRunner/player/runner";
+
+static int textTagSafety = c_textTagNone;
+static int textTagNextWave = c_textTagNone;
+static int textTagDebugWave = c_textTagNone;
+
+static text getCurrentWave() {
+    return StringToText("Wave " + IntToString(runnerWaveCurrentIndex + 1));
+}
+
+
+static void addWaveDebugTags() {
+    textTagDebugWave = TextTagCreate(getCurrentWave(), 30, Point(32, 6), 1.0, true, false, PlayerGroupAll());
+}
+
+void updateDebugTags() {
+    TextTagDestroy(textTagDebugWave);
+    addWaveDebugTags();
+}
+
+void updateTeleportTags() {
+    // if (allRunnersClearedCurrentWave()) {
+    //     TextTagSetColor(textTagNextWave, c_textTagColorText, Color(255,0,0));
+    // } else {
+    //     TextTagSetColor(textTagNextWave, c_textTagColorText, Color(0,255,0));
+    // }
+}
+
+static void addTeleportTags() {
+    textTagSafety = TextTagCreate(StringToText("Safety"), 20, Point(32, 58), 1.0, true, false, PlayerGroupAll());
+    textTagNextWave = TextTagCreate(StringToText("Next wave"), 20, Point(42, 61), 1.0, true, false, PlayerGroupAll());
+    updateTeleportTags();
+    // TextTagSetColor(textTagNextWave, c_textTagColorText, Color(0, 255, 0));
+}
+
+void addWaveRunnerTextTags() {
+    addTeleportTags();
+    addWaveDebugTags();
+}

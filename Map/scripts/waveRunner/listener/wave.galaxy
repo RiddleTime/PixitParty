@@ -1,0 +1,17 @@
+include "scripts/waveRunner/manager/wave";
+
+// 'burns' the wave units
+bool regionBurnEnterTrigger(bool testConds, bool runActions) {
+    unit eventUnit = EventUnit();
+
+    if (StringFind(UnitGetType(eventUnit), "Zergling", true) <= -1) {
+        return true;
+    }
+
+    UnitSetPosition(eventUnit, libNtve_gf_PointFromXYZ(0.0, 120.0, 8.0), false);
+    UnitGroupRemove(unitGroupActiveWave, eventUnit);
+    UnitKill(eventUnit);
+    UnitRemove(eventUnit);
+    
+    return true;
+}

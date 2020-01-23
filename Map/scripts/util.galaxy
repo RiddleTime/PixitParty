@@ -1,0 +1,33 @@
+const bool showDebug = false;
+
+void messagePlayer(string msg, int playerIndex) {
+    UIDisplayMessage(PlayerGroupSingle(playerIndex), c_messageAreaSubtitle, StringToText(msg));
+}
+
+void message(string msg) {
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(msg));
+}
+
+void debug(string msg){
+    if (showDebug) {
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText(msg));
+    }
+}
+
+void messageText(text msg) {
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, msg);
+}
+
+void cinematicMessage(string msg) {
+    UIShowCinematicText(PlayerGroupAll(), StringToText(msg), 1.0, 5, SoundLink("UI_ObjectiveText", 0));
+}
+
+int randomExcept(int min, int max, int except) {
+    int number = except;
+    
+    while (number == except) {
+        number = RandomInt(min, max);
+    }    
+
+    return number;
+}

@@ -1,0 +1,3 @@
+﻿CustomScript/Name/33CEB071=MapStart
+Trigger/Name/AA7E2055=Untitled Trigger 001
+Variable/Name/A18509E6=Untitled Variable 001

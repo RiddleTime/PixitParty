@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade default="1" id="ProtossGroundArmors2">
+        <Name value="Upgrade/Name/ProtossGroundArmors2"/>
+        <WebPriority value="0"/>
+        <Race value="Prot"/>
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,Probe,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Probe,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZealotWaveRunnerPlayer,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ZealotWaveRunnerPlayer,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Sentry,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Sentry,LifeArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,Stalker,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Stalker,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Immortal,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Immortal,LifeArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,HighTemplar,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HighTemplar,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DarkTemplar,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DarkTemplar,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Archon,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Archon,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Colossus,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Colossus,LifeArmor" Value="1"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="Archon"/>
+        <AffectedUnitArray value="Colossus"/>
+        <AffectedUnitArray value="DarkTemplar"/>
+        <AffectedUnitArray value="Sentry"/>
+        <AffectedUnitArray value="HighTemplar"/>
+        <AffectedUnitArray value="Immortal"/>
+        <AffectedUnitArray value="Probe"/>
+        <AffectedUnitArray value="Stalker"/>
+        <AffectedUnitArray value="ZealotWaveRunnerPlayer"/>
+        <LeaderAlias value="ProtossGroundArmors"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="ProtossGroundWeapons2">
+        <Name value="Upgrade/Name/ProtossGroundWeapons2"/>
+        <WebPriority value="0"/>
+        <Race value="Prot"/>
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Weapon,PsiBlades,Level" Value="1"/>
+        <EffectArray Reference="Effect,PsiBlades,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,DisruptionBeam,Level" Value="1"/>
+        <EffectArray Reference="Effect,DisruptionBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,ParticleDisruptors,Level" Value="1"/>
+        <EffectArray Reference="Effect,ParticleDisruptorsU,Amount" Value="1.000000"/>
+        <EffectArray Reference="Weapon,PhaseDisruptors,Level" Value="1"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Weapon,WarpBlades,Level" Value="1"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="5"/>
+        <EffectArray Reference="Weapon,PsionicShockwave,Level" Value="1"/>
+        <EffectArray Reference="Effect,PsionicShockwaveDamage,Amount" Value="3.000000"/>
+        <EffectArray Reference="Weapon,ThermalLances,Level" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PsionicShockwaveDamage,AttributeBonus[Biological]" Value="1.000000"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:AttackBonus"/>
+        <AffectedUnitArray value="Archon"/>
+        <AffectedUnitArray value="Colossus"/>
+        <AffectedUnitArray value="DarkTemplar"/>
+        <AffectedUnitArray value="Sentry"/>
+        <AffectedUnitArray value="HighTemplar"/>
+        <AffectedUnitArray value="Immortal"/>
+        <AffectedUnitArray value="Stalker"/>
+        <AffectedUnitArray value="ZealotWaveRunnerPlayer"/>
+        <LeaderAlias value="ProtossGroundWeapons"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="ProtossShields2">
+        <Name value="Upgrade/Name/ProtossShields2"/>
+        <WebPriority value="0"/>
+        <Race value="Prot"/>
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,Probe,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Probe,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Sentry,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Sentry,ShieldArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,Stalker,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Stalker,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Immortal,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Immortal,ShieldArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,HighTemplar,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HighTemplar,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,DarkTemplar,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DarkTemplar,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Archon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Archon,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Observer,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Observer,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,WarpPrism,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,WarpPrism,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,WarpPrismPhasing,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,WarpPrismPhasing,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Colossus,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Colossus,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Phoenix,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Phoenix,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,VoidRay,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,VoidRay,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Carrier,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Carrier,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Interceptor,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Interceptor,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Mothership,ShieldArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,Mothership,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Nexus,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Nexus,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Assimilator,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Assimilator,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Pylon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Pylon,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Gateway,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Gateway,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,WarpGate,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,WarpGate,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Forge,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Forge,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,PhotonCannon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,PhotonCannon,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,CyberneticsCore,ShieldArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,CyberneticsCore,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,TwilightCouncil,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,TwilightCouncil,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,TemplarArchive,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,TemplarArchive,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,DarkShrine,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DarkShrine,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,RoboticsFacility,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,RoboticsFacility,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,RoboticsBay,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,RoboticsBay,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,Stargate,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Stargate,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,FleetBeacon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,FleetBeacon,ShieldArmor" Value="1"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="Archon"/>
+        <AffectedUnitArray value="Assimilator"/>
+        <AffectedUnitArray value="Carrier"/>
+        <AffectedUnitArray value="Colossus"/>
+        <AffectedUnitArray value="CyberneticsCore"/>
+        <AffectedUnitArray value="DarkTemplar"/>
+        <AffectedUnitArray value="Sentry"/>
+        <AffectedUnitArray value="FleetBeacon"/>
+        <AffectedUnitArray value="Forge"/>
+        <AffectedUnitArray value="Gateway"/>
+        <AffectedUnitArray value="HighTemplar"/>
+        <AffectedUnitArray value="Immortal"/>
+        <AffectedUnitArray value="Interceptor"/>
+        <AffectedUnitArray value="Mothership"/>
+        <AffectedUnitArray value="Nexus"/>
+        <AffectedUnitArray value="DarkShrine"/>
+        <AffectedUnitArray value="Observer"/>
+        <AffectedUnitArray value="Phoenix"/>
+        <AffectedUnitArray value="PhotonCannon"/>
+        <AffectedUnitArray value="Probe"/>
+        <AffectedUnitArray value="Pylon"/>
+        <AffectedUnitArray value="RoboticsBay"/>
+        <AffectedUnitArray value="RoboticsFacility"/>
+        <AffectedUnitArray value="Stalker"/>
+        <AffectedUnitArray value="Stargate"/>
+        <AffectedUnitArray value="TemplarArchive"/>
+        <AffectedUnitArray value="TwilightCouncil"/>
+        <AffectedUnitArray value="VoidRay"/>
+        <AffectedUnitArray value="WarpGate"/>
+        <AffectedUnitArray value="WarpPrismPhasing"/>
+        <AffectedUnitArray value="WarpPrism"/>
+        <AffectedUnitArray value="ZealotWaveRunnerPlayer"/>
+        <LeaderAlias value="ProtossShields"/>
+    </CUpgrade>
+    <CUpgrade id="Charge2">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="400"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,ZealotWaveRunnerPlayer,Speed" Value="0.500000"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+    <CUpgrade id="Charge3">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="400"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,ZealotWaveRunnerPlayer,Speed" Value="0.500000"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundArmorsLevel12" parent="ProtossGroundArmors">
+        <Name value="Upgrade/Name/ProtossGroundArmorsLevel12"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <ScoreAmount value="200"/>
+        <EffectArray index="2" Reference="Unit,ZealotWaveRunnerPlayer,LifeArmorLevel" Value="1"/>
+        <EffectArray index="3" Reference="Unit,ZealotWaveRunnerPlayer,LifeArmor" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Probe,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Sentry,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Stalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HighTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DarkTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Archon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Colossus,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Adept,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Reference="Unit,Adept,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Adept,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Disruptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Reference="Unit,Disruptor,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DisruptorPhased,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Disruptor,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DisruptorPhased,LifeArmorLevel" Value="1"/>
+        <AffectedUnitArray index="8" value="ZealotWaveRunnerPlayer"/>
+        <AffectedUnitArray value="Adept"/>
+        <AffectedUnitArray value="Disruptor"/>
+        <AffectedUnitArray value="DisruptorPhased"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundArmorsLevel22" parent="ProtossGroundArmors">
+        <Name value="Upgrade/Name/ProtossGroundArmorsLevel22"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <ScoreAmount value="300"/>
+        <EffectArray index="2" Reference="Unit,ZealotWaveRunnerPlayer,LifeArmorLevel" Value="1"/>
+        <EffectArray index="3" Reference="Unit,ZealotWaveRunnerPlayer,LifeArmor" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Probe,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Sentry,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Stalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HighTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DarkTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Archon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Colossus,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Adept,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Reference="Unit,Adept,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Adept,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Disruptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Reference="Unit,Disruptor,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DisruptorPhased,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Disruptor,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DisruptorPhased,LifeArmorLevel" Value="1"/>
+        <AffectedUnitArray index="8" value="ZealotWaveRunnerPlayer"/>
+        <AffectedUnitArray value="Adept"/>
+        <AffectedUnitArray value="Disruptor"/>
+        <AffectedUnitArray value="DisruptorPhased"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundArmorsLevel32" parent="ProtossGroundArmors">
+        <Name value="Upgrade/Name/ProtossGroundArmorsLevel32"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <ScoreAmount value="400"/>
+        <EffectArray index="2" Reference="Unit,ZealotWaveRunnerPlayer,LifeArmorLevel" Value="1"/>
+        <EffectArray index="3" Reference="Unit,ZealotWaveRunnerPlayer,LifeArmor" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Probe,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Sentry,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Stalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HighTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DarkTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Archon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Colossus,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Adept,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Reference="Unit,Adept,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Adept,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Disruptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Reference="Unit,Disruptor,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DisruptorPhased,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Disruptor,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DisruptorPhased,LifeArmor" Value="1"/>
+        <AffectedUnitArray index="8" value="ZealotWaveRunnerPlayer"/>
+        <AffectedUnitArray value="Adept"/>
+        <AffectedUnitArray value="Disruptor"/>
+        <AffectedUnitArray value="DisruptorPhased"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundWeaponsLevel12" parent="ProtossGroundWeaponsLevel1">
+        <Name value="Upgrade/Name/ProtossGroundWeaponsLevel12"/>
+        <AffectedUnitArray index="7" value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundWeaponsLevel22" parent="ProtossGroundWeaponsLevel2">
+        <Name value="Upgrade/Name/ProtossGroundWeaponsLevel22"/>
+        <AffectedUnitArray index="7" value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundWeaponsLevel32" parent="ProtossGroundWeaponsLevel3">
+        <Name value="Upgrade/Name/ProtossGroundWeaponsLevel32"/>
+        <AffectedUnitArray index="7" value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossShieldsLevel12" parent="ProtossShieldsLevel1">
+        <Name value="Upgrade/Name/ProtossShieldsLevel12"/>
+        <EffectArray index="2" Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmor"/>
+        <AffectedUnitArray index="31" value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossShieldsLevel22" parent="ProtossShieldsLevel2">
+        <Name value="Upgrade/Name/ProtossShieldsLevel22"/>
+        <EffectArray index="2" Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmor"/>
+        <AffectedUnitArray index="31" value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossShieldsLevel32" parent="ProtossShieldsLevel3">
+        <Name value="Upgrade/Name/ProtossShieldsLevel32"/>
+        <EffectArray index="2" Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,ZealotWaveRunnerPlayer,ShieldArmor"/>
+        <AffectedUnitArray index="31" value="ZealotWaveRunnerPlayer"/>
+    </CUpgrade>
+</Catalog>

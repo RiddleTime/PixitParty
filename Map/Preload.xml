@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Actor id="SYSTEM_ActorConfig"/>
+<Actor id="AiurTree_Ex2" Variations="3,4"/>
+<Actor id="Aiur_ChiseledRock_Brown" Variations="1,2,4"/>
+<Actor id="BattleStation_CliffPlatform" Variations="7"/>
+<Actor id="BattleStation_CliffPlatform_Short" Variations="9"/>
+<Actor id="BattleStation_FloodLight" Variations="5"/>
+<Actor id="BattleStation_Floor_Interior_Short" Variations="2,9,10"/>
+<Actor id="Blast_Craters_Big" Variations="5"/>
+<Actor id="CompoundSewers_GlassWalls" Variations="4,6"/>
+<Actor id="DOM_Corridor"/>
+<Actor id="DefendersCity_Warehouse" Variations="3"/>
+<Actor id="Elsecaro_Bush1x1" Variations="1"/>
+<Actor id="Elsecaro_Bush4x4" Variations="2"/>
+<Actor id="Elsecaro_Curb" Variations="12"/>
+<Actor id="FurnaceSmall"/>
+<Actor id="GasGiantStorm"/>
+<Actor id="LoSBlockerColumn"/>
+<Actor id="PortCity_GroundLights"/>
+<Actor id="ProtossWarpInPadFlat"/>
+<Actor id="Purifier_Trees_Tall" Variations="5"/>
+<Actor id="Purifier_Warp_In_Pad"/>
+<Actor id="SpaceFloodLight" Variations="0,1"/>
+<Actor id="StarshipIceWorldIceSamples" Variations="1,2"/>
+<Actor id="TheVoid_LightRed" Variations="0,2"/>
+<Actor id="TheVoid_RubblePile" Variations="0,1,2"/>
+<Actor id="Void_CrackSplat" Variations="0,1,4,5"/>
+<Actor id="Void_Nebula_Storm"/>
+<Actor id="ZerusLargeTree" Variations="0"/>
+<Actor id="ZerusLightning"/>
+<Actor id="ZerusTree" Variations="2,14"/>
+<Actor id="ZerusWaterPlant" Variations="5"/>
+<Actor id="FireMedium"/>
+<Terrain id="BelShirEx1"/>
+</Preload>

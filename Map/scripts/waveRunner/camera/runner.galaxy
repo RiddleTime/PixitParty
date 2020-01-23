@@ -1,0 +1,35 @@
+void initWaveRunnerStartCamera(int playerIndex, unit runnerUnit, fixed time) {
+    UnitSelect(runnerUnit, playerIndex, false);
+    libNtve_gf_MakeUnitUncommandable(runnerUnit, true);
+    CameraLookAtUnit(playerIndex, null);
+    Wait(0.1, c_timeReal);
+    CameraApplyInfo(playerIndex, CameraInfoFromId(1558108070), time + 0.2, -1, 10.0, true);
+    Wait(time + 0.2, c_timeReal);
+    UnitSetPosition(runnerUnit, PointFromName("PointStartField1"), false);
+    UnitIssueOrder(runnerUnit, OrderTargetingPoint(AbilityCommand("move4", 0), PointFromName("PointStartField1")), c_orderQueueReplace);
+    CameraLookAt(playerIndex, UnitGetPosition(runnerUnit), 1.3, 1, 10);
+    Wait(1.3, c_timeReal);
+    CameraLookAtUnit(playerIndex, runnerUnit);
+    UnitSelect(runnerUnit, playerIndex, true);
+    libNtve_gf_MakeUnitUncommandable(runnerUnit, false);
+}
+
+void setCameraToOtherSide(int playerIndex, unit runnerUnit) {
+    // set camera to other side for the waveRunner
+    UnitSelect(runnerUnit, playerIndex, false);
+    libNtve_gf_MakeUnitUncommandable(runnerUnit, true);
+    CameraLookAtUnit(playerIndex, null);
+    CameraApplyInfo(playerIndex, CameraInfoFromId(1038264827), 2.0, -1, 10.0, false);
+    Wait(1.6, c_timeReal);
+    UnitSetPosition(runnerUnit, PointFromName("PointField1FinishArea"), true);
+    Wait(0.4, c_timeReal);
+    CameraLookAt(playerIndex, UnitGetPosition(runnerUnit), 0.8, -1, 10);
+    Wait(0.8, c_timeReal);
+    CameraLookAtUnit(playerIndex, runnerUnit);
+    UnitSelect(runnerUnit, playerIndex, true);
+    libNtve_gf_MakeUnitUncommandable(runnerUnit, false);
+}
+
+void initGoalCamera(int playerIndex, unit runnerUnit) {
+
+}

@@ -1,0 +1,122 @@
+include "scripts/waveRunner/waveRunnerData";
+
+
+void setRunnerWaveGates(int waveIndex) {
+    int i;
+    for (i = 0; i < runnerWaves[waveIndex].gateCount; i += 1) {
+        runnerWaveCurrent.gates[i].gateSize = runnerWaves[waveIndex].gates[i].gateSize;
+        runnerWaveCurrent.gates[i].gateStart = runnerWaves[waveIndex].gates[i].gateStart;
+        runnerWaveCurrent.gates[i].shouldSwapDirection = runnerWaves[waveIndex].gates[i].shouldSwapDirection;
+        runnerWaveCurrent.gates[i].direction = runnerWaves[waveIndex].gates[i].direction;
+    }
+}
+
+void setRunnerWave(int i) {
+    runnerWaveCurrentIndex = i;
+    
+    if (runnerWaveCurrentIndex >= runnerWaveWavesAmount) {
+        return;
+    }
+    
+    runnerWaveCurrent.sendTime = runnerWaves[i].sendTime;
+    runnerWaveCurrent.gateCount = runnerWaves[i].gateCount;
+    
+    if (runnerWaves[i].gateCount > 0) {
+        setRunnerWaveGates(i);
+    }
+}
+
+static void initWave1to4() {
+    int i;
+
+    // index 0 = 1st wave, index 4 = 3rd wave
+    for (i = 0; i < 4; i += 1) {
+        runnerWaves[i].sendTime = 2 - (i * 0.25);
+
+        // set gates //
+        runnerWaves[i].gateCount = 2;
+
+        // gate 1
+        runnerWaves[i].gates[0].gateStart = 0;
+        runnerWaves[i].gates[0].gateSize = 4 - i;
+        runnerWaves[i].gates[0].shouldSwapDirection = true;
+        runnerWaves[i].gates[0].direction = true;
+
+        // gate 2
+        runnerWaves[i].gates[1].gateStart = matrixWidth - 1;
+        runnerWaves[i].gates[1].gateSize = 4;
+        runnerWaves[i].gates[1].shouldSwapDirection = true;
+        runnerWaves[i].gates[1].direction = false;
+    }
+}
+
+static void initWave5to8() {
+    int i;
+
+    // index 4 = 5th wave, index 8 = 9th wave
+    for (i = 4; i < 8; i += 1) {
+        runnerWaves[i].sendTime = 1.3 - ((i - 4) * 0.1);
+
+
+        // set gates //
+        runnerWaves[i].gateCount = 2;
+
+        // gate 1
+        runnerWaves[i].gates[0].gateStart = i - 4;
+        runnerWaves[i].gates[0].gateSize = 3;
+        runnerWaves[i].gates[0].direction = true;
+        runnerWaves[i].gates[0].shouldSwapDirection = false;
+
+        // gate 2
+        runnerWaves[i].gates[1].gateStart = matrixWidth - i;
+        runnerWaves[i].gates[1].gateSize = 3;
+        runnerWaves[i].gates[1].direction = false;
+        runnerWaves[i].gates[1].shouldSwapDirection = true;
+    }
+}
+
+static void initWave9to10() {
+    int i;
+    fixed s = -0.11;
+
+    // index 8 = 9th wave, index 10 = 11th wave
+    for (i = 8; i < 10; i += 1) {
+        runnerWaves[i].sendTime = 0.95 + s;
+        s -= 0.2;
+
+        runnerWaves[i].gateCount = 2;
+        runnerWaves[i].gates[0].gateStart = 0;
+        runnerWaves[i].gates[0].gateSize = 3;
+        runnerWaves[i].gates[0].shouldSwapDirection = true;
+        runnerWaves[i].gates[0].direction = true;
+
+        runnerWaves[i].gates[1].gateStart = matrixWidth - 1;
+        runnerWaves[i].gates[1].gateSize = 3;
+        runnerWaves[i].gates[1].shouldSwapDirection = true;
+        runnerWaves[i].gates[1].direction = false;
+    }
+}
+
+static void initWave11ToWave12() {
+    int i;
+    fixed s = -0.11;
+
+    // index 8 = 9th wave, index 10 = 11th wave
+    for (i = 10; i < 12; i += 1) {
+        runnerWaves[i].sendTime = 0.87 + s;
+        s -= 0.2;
+
+        runnerWaves[i].gateCount = 1;
+        runnerWaves[i].gates[0].gateStart = 0;
+        runnerWaves[i].gates[0].gateSize = 3;
+        runnerWaves[i].gates[0].shouldSwapDirection = true;
+        runnerWaves[i].gates[0].direction = true;
+    }
+}
+
+void initRunnerWaves() {
+    initWave1to4();
+    initWave5to8();
+    initWave9to10();
+    initWave11ToWave12();
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="PsiBlades2" parent="DU_WEAP">
+        <ValidatorArray value="NotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="8"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PsiBladesBurst2">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="PsiBlades2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="VolatileBurstU">
+        <Amount value="2000"/>
+    </CEffectDamage>
+</Catalog>

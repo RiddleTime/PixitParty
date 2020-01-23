@@ -1,0 +1,56 @@
+include "scripts/util";
+include "scripts/waveRunner/waveRunnerData";
+include "scripts/player/players";
+
+struct Runner {
+    int realPlayer;
+    int currentWave;
+    bool gaveUp;
+};
+
+Runner[10] waveRunners;
+
+void initRunnerData() {
+    int i;
+
+    for (i = 0; i < realPlayerCount; i += 1) {
+        waveRunners[i].realPlayer = i;
+        waveRunners[i].currentWave = -1;
+    }
+}
+
+bool allRunnersClearedCurrentWave() {
+    int i;
+    int clearedRunners = 0;
+    
+    for (i = 0; i < realPlayerCount; i += 1) {
+        if (waveRunners[i].currentWave >= runnerWaveCurrentIndex) {
+            clearedRunners += 1;
+        }
+    }
+
+    // message("runner clear: " + IntToString(clearedRunners) + "/" + IntToString(realPlayerCount));
+
+    return clearedRunners == realPlayerCount;
+}
+
+void runnerClearWave(int playerIndex) {
+    int i;
+    int runnerIndex = -1;
+    
+    // message("runnerWaveIndex: " + IntToString(runnerWaveCurrentIndex));
+    for (i = 0; i < realPlayerCount; i += 1) {
+        if (realPlayers[waveRunners[i].realPlayer].id == playerIndex && waveRunners[i].currentWave < runnerWaveCurrentIndex) {
+            waveRunners[i].currentWave = waveRunners[i].currentWave + 1;
+            runnerIndex = i;
+            // message("runnerIndex " + IntToString(runnerIndex) + ", wave Index: " + IntToString(waveRunners[i].currentWave));
+            break;
+        }
+    }
+    // message("here1");
+    if (runnerIndex > -1) {
+        // message("here2");
+        messageText(realPlayers[waveRunners[runnerIndex].realPlayer].name + StringToText(" has cleared wave " + IntToString(waveRunners[runnerIndex].currentWave + 1) + "!"));
+    }
+
+}

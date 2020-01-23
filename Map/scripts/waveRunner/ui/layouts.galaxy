@@ -1,0 +1,6 @@
+static int waveRunnerPlayersLayout = -1;
+
+void enableWaveRunnerLayouts() {
+    waveRunnerPlayersLayout = DialogControlHookupStandard(c_triggerControlTypePanel, "UI/Layout/PixitPartyWaveRunnerPlayers.SC2Layout");
+    UISetFrameVisible(PlayerGroupAll(), waveRunnerPlayersLayout, true);
+}

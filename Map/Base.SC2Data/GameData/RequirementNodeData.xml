@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementCountUpgrade id="UpgradeZergling2CompleteOnly">
+        <Count Link="WaveRunnerZergling"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="UpgradeZergling2QueuedOrBetter">
+        <Count Link="WaveRunnerZergling"/>
+    </CRequirementCountUpgrade>
+</Catalog>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="HallucinationDeath2" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\HallucinateDeath\HallucinateDeath.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="HallucinationDeath3" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\HallucinateDeath\HallucinateDeath.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="Invisible2" Race="Neutral">
+        <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Radius value="-1.000000"/>
+        <SelectionRadius value="0.000000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="Invisible3" Race="Neutral">
+        <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Radius value="-1.000000"/>
+        <SelectionRadius value="0.000000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="Invisible4" Race="Neutral">
+        <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Radius value="-1.000000"/>
+        <SelectionRadius value="0.000000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="ProtossFastWarpinMarker2" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ProtossFastWarpinMarker\ProtossFastWarpinMarker.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="ProtossFastWarpinMarker3" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ProtossFastWarpinMarker\ProtossFastWarpinMarker.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="ProtossSmallUnitDeathLow2" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\ProtossUnitDeath\ProtossUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+        <SelectionRadius value="0.400000"/>
+        <ShadowRadius value="0.400000"/>
+    </CModel>
+    <CModel id="ProtossSmallUnitDeathLow3" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\ProtossUnitDeath\ProtossUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+        <SelectionRadius value="0.400000"/>
+        <ShadowRadius value="0.400000"/>
+    </CModel>
+    <CModel id="ProtossSmallUnitDeathLow4" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\ProtossUnitDeath\ProtossUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+        <SelectionRadius value="0.400000"/>
+        <ShadowRadius value="0.400000"/>
+    </CModel>
+    <CModel id="TerranSmallUnitDeathLow2" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\TerranSmallUnitDeath\TerranSmallUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+        <SelectionRadius value="0.454300"/>
+        <ShadowRadius value="0.454300"/>
+    </CModel>
+    <CModel id="TerranSmallUnitDeathLow3" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\TerranSmallUnitDeath\TerranSmallUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+        <SelectionRadius value="0.454300"/>
+        <ShadowRadius value="0.454300"/>
+    </CModel>
+    <CModel id="TerranSmallUnitDeathLow4" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\TerranSmallUnitDeath\TerranSmallUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+        <SelectionRadius value="0.454300"/>
+        <ShadowRadius value="0.454300"/>
+    </CModel>
+    <CModel id="Zealot2" parent="ZealotBase">
+        <Model value="Assets\Units\Protoss\Zealot_Ex2\Zealot_Ex2.m3"/>
+    </CModel>
+    <CModel id="Zealot3" parent="ZealotBase">
+        <Model value="Assets\Units\Protoss\Zealot_Ex2\Zealot_Ex2.m3"/>
+    </CModel>
+    <CModel id="ZealotDeath2" parent="ZealotDeathBase">
+        <Model value="Assets\Units\Protoss\ZealotDeath\ZealotDeath.m3"/>
+    </CModel>
+    <CModel id="ZealotDeath3" parent="ZealotDeathBase">
+        <Model value="Assets\Units\Protoss\ZealotDeath\ZealotDeath.m3"/>
+    </CModel>
+    <CModel id="ZealotDeathRagdoll2" parent="ZealotDeathRagdollBase">
+        <Model value="Assets\Units\Protoss\ZealotDeathRagdoll\ZealotDeathRagdoll.m3"/>
+    </CModel>
+    <CModel id="ZealotDeathRagdoll3" parent="ZealotDeathRagdollBase">
+        <Model value="Assets\Units\Protoss\ZealotDeathRagdoll\ZealotDeathRagdoll.m3"/>
+    </CModel>
+    <CModel id="ZealotPlacement2" parent="Placement" Race="Protoss">
+        <Model value="Assets\Units\Protoss\ZealotPlacement\ZealotPlacement.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <SelectionRadius value="0.416500"/>
+        <ShadowRadius value="0.416500"/>
+    </CModel>
+    <CModel id="ZealotPlacement3" parent="Placement" Race="Protoss">
+        <Model value="Assets\Units\Protoss\ZealotPlacement\ZealotPlacement.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <SelectionRadius value="0.416500"/>
+        <ShadowRadius value="0.416500"/>
+    </CModel>
+    <CModel id="ZealotPortrait2" parent="ZealotPortraitBase">
+        <Model value="Assets\Portraits\Protoss\ZealotPortrait\ZealotPortrait.m3"/>
+        <Image value="Assets\Textures\ZealotPortrait_Static.dds"/>
+        <Lighting value="ZealotPortrait"/>
+    </CModel>
+    <CModel id="ZealotPortrait3" parent="ZealotPortraitBase">
+        <Model value="Assets\Portraits\Protoss\ZealotPortrait\ZealotPortrait.m3"/>
+        <Image value="Assets\Textures\ZealotPortrait_Static.dds"/>
+        <Lighting value="ZealotPortrait"/>
+    </CModel>
+    <CModel id="ZealotWarpIn2" parent="ZealotWarpInBase">
+        <Model value="Assets\Units\Protoss\ZealotWarpIn\ZealotWarpIn.m3"/>
+    </CModel>
+    <CModel id="ZealotWarpIn3" parent="ZealotWarpInBase">
+        <Model value="Assets\Units\Protoss\ZealotWarpIn\ZealotWarpIn.m3"/>
+    </CModel>
+    <CModel id="ZergSmallUnitDeathLow2" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\ZergSmallUnitDeath\ZergSmallUnitDeath_low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="0.625000"/>
+        <ShadowRadius value="0.625000"/>
+    </CModel>
+    <CModel id="ZergSmallUnitDeathLow3" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\ZergSmallUnitDeath\ZergSmallUnitDeath_low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="0.625000"/>
+        <ShadowRadius value="0.625000"/>
+    </CModel>
+    <CModel id="ZergSmallUnitDeathLow4" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\ZergSmallUnitDeath\ZergSmallUnitDeath_low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="0.625000"/>
+        <ShadowRadius value="0.625000"/>
+    </CModel>
+    <CModel id="Zergling2" parent="ZerglingBase">
+        <Model value="Assets\Units\Zerg\Zergling\Zergling.m3"/>
+    </CModel>
+    <CModel id="ZerglingDeath2" parent="ZerglingDeathBase">
+        <Model value="Assets\Units\Zerg\ZerglingDeathEx1\ZerglingDeathEx1.m3"/>
+    </CModel>
+    <CModel id="ZerglingDeathAcid2" parent="ZerglingDeathAcidBase">
+        <Model value="Assets\Units\Zerg\ZerglingDeathAcid\ZerglingDeathAcid.m3"/>
+    </CModel>
+    <CModel id="ZerglingDeathEviscerate2" parent="ZerglingDeathEviscerateBase">
+        <Model value="Assets\Units\Zerg\ZerglingDeathEviscerateEx1\ZerglingDeathEviscerateEx1.m3"/>
+    </CModel>
+    <CModel id="ZerglingDeathFire2" parent="ZerglingDeathFireBase">
+        <Model value="Assets\Units\Zerg\ZerglingDeathFire\ZerglingDeathFire.m3"/>
+    </CModel>
+    <CModel id="ZerglingDeathRagdoll2" parent="ZerglingDeathRagdollBase">
+        <Model value="Assets\Units\Zerg\ZerglingDeathRagdoll\ZerglingDeathRagdoll.m3"/>
+    </CModel>
+    <CModel id="ZerglingPortrait2" parent="ZerglingPortraitBase">
+        <Model value="Assets\Portraits\Zerg\ZerglingPortrait\ZerglingPortrait.m3"/>
+        <Flags index="VariationFallback" value="0"/>
+        <Image value="Assets\Textures\ZerglingPortrait_Static.dds"/>
+        <Lighting value="ZerglingPortrait"/>
+    </CModel>
+    <CModel id="ZerglingUpgradeDeath2" parent="ZerglingUpgradeDeathBase">
+        <Model value="Assets\Units\Zerg\ZerglingUpgradeDeath\ZerglingUpgradeDeath.m3"/>
+    </CModel>
+    <CModel id="ZerglingUpgradeDeathAcid2" parent="ZerglingUpgradeDeathAcidBase">
+        <Model value="Assets\Units\Zerg\ZerglingUpgradeDeath\ZerglingUpgradeDeath.m3"/>
+    </CModel>
+    <CModel id="ZerglingUpgradeDeathEviscerate2" parent="ZerglingUpgradeDeathEviscerateBase"/>
+    <CModel id="ZerglingUpgradeDeathFire2" parent="ZerglingUpgradeDeathFireBase">
+        <Model value="Assets\Units\Zerg\ZerglingUpgradeDeathFire\ZerglingUpgradeDeathFire.m3"/>
+    </CModel>
+</Catalog>

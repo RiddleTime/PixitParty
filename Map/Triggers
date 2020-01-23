@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TriggerData>
+    <Root>
+        <Item Type="CustomScript" Id="33CEB071"/>
+        <Item Type="Trigger" Id="AA7E2055"/>
+    </Root>
+    <Element Type="CustomScript" Id="33CEB071">
+        <ScriptCode>
+            include &quot;scripts/pi2.galaxy&quot;;
+        </ScriptCode>
+        <InitFunc>main</InitFunc>
+    </Element>
+    <Element Type="Trigger" Id="AA7E2055">
+        <Identifier>UntitledTrigger001</Identifier>
+        <Disabled/>
+        <InitOff/>
+        <Variable Type="Variable" Id="A18509E6"/>
+        <Action Type="FunctionCall" Id="78C396E8"/>
+    </Element>
+    <Element Type="Variable" Id="A18509E6">
+        <Identifier>untitledVariable001</Identifier>
+        <VariableType>
+            <Type Value="preset"/>
+            <TypeElement Type="Preset" Library="Ntve" Id="00000103"/>
+        </VariableType>
+        <Value Type="Param" Id="896AC260"/>
+    </Element>
+    <Element Type="Param" Id="896AC260">
+        <Preset Type="PresetValue" Library="Ntve" Id="DADA16A1"/>
+    </Element>
+    <Element Type="FunctionCall" Id="78C396E8">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="593FBAF8"/>
+        <Parameter Type="Param" Id="77076AD8"/>
+        <Parameter Type="Param" Id="D235D0CB"/>
+        <Parameter Type="Param" Id="33055247"/>
+        <Parameter Type="Param" Id="005918CA"/>
+        <Parameter Type="Param" Id="CDF1FBA6"/>
+        <Parameter Type="Param" Id="E4188614"/>
+        <Parameter Type="Param" Id="F7D0B3DC"/>
+    </Element>
+    <Element Type="Param" Id="77076AD8">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="E6B1E94C"/>
+        <Value>24</Value>
+        <ValueType Type="int"/>
+    </Element>
+    <Element Type="Param" Id="D235D0CB">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="915E316B"/>
+        <FunctionCall Type="FunctionCall" Id="26C80AA0"/>
+    </Element>
+    <Element Type="FunctionCall" Id="26C80AA0">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000022"/>
+        <Parameter Type="Param" Id="557981F4"/>
+        <Parameter Type="Param" Id="1B00774B"/>
+    </Element>
+    <Element Type="Param" Id="557981F4">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000034"/>
+        <Value>32.0</Value>
+        <ValueType Type="fixed"/>
+    </Element>
+    <Element Type="Param" Id="1B00774B">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000035"/>
+        <Value>48.0</Value>
+        <ValueType Type="fixed"/>
+    </Element>
+    <Element Type="Param" Id="33055247">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="9B739D1B"/>
+        <Value>1</Value>
+        <ValueType Type="fixed"/>
+    </Element>
+    <Element Type="Param" Id="005918CA">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="57586A9E"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="689B7C3F"/>
+    </Element>
+    <Element Type="Param" Id="CDF1FBA6">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="9FC43291"/>
+        <Value>false</Value>
+        <ValueType Type="bool"/>
+    </Element>
+    <Element Type="Param" Id="E4188614">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="467E7635"/>
+        <FunctionCall Type="FunctionCall" Id="B47B3312"/>
+    </Element>
+    <Element Type="FunctionCall" Id="B47B3312">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000192"/>
+    </Element>
+    <Element Type="Param" Id="F7D0B3DC">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="328DDEB9"/>
+        <ValueType Type="text"/>
+    </Element>
+</TriggerData>

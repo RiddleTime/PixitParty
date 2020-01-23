@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacedObjects Version="27">
+    <ObjectCamera Id="1038264827" Position="32,50,0" Scale="1,1,1" Name="CameraField1Complete" Color="0,0,0,0" CameraTarget="32,50">
+        <CameraValue Index="FieldOfView" Value="26"/>
+        <CameraValue Index="NearClip" Value="0.0998"/>
+        <CameraValue Index="FarClip" Value="1286.1535"/>
+        <CameraValue Index="ShadowClip" Value="75"/>
+        <CameraValue Index="Distance" Value="40"/>
+        <CameraValue Index="Pitch" Value="39.5197"/>
+        <CameraValue Index="HeightOffset" Value="-4.8703"/>
+        <CameraValue Index="FocalDepth" Value="8"/>
+        <CameraValue Index="FalloffStart" Value="0.0002"/>
+        <CameraValue Index="FalloffEnd" Value="8"/>
+        <CameraValue Index="FalloffStartNear" Value="0.0002"/>
+        <CameraValue Index="FalloffEndNear" Value="0.0002"/>
+        <CameraValue Index="BokehFStop" Value="0.0163"/>
+        <CameraValue Index="BokehMaxCoC" Value="1"/>
+    </ObjectCamera>
+    <ObjectCamera Id="1558108070" Position="32.5,14.5,0" Rotation="3.1413" Scale="1,1,1" Name="CameraField1" Color="0,0,0,0" CameraTarget="32.5,14.5">
+        <Flag Index="CameraLockSource" Value="1"/>
+        <CameraValue Index="FieldOfView" Value="21.7995"/>
+        <CameraValue Index="NearClip" Value="0.0998"/>
+        <CameraValue Index="FarClip" Value="1286.1535"/>
+        <CameraValue Index="ShadowClip" Value="75"/>
+        <CameraValue Index="Distance" Value="41.1142"/>
+        <CameraValue Index="Pitch" Value="41.5695"/>
+        <CameraValue Index="Yaw" Value="180"/>
+        <CameraValue Index="HeightOffset" Value="-1.5"/>
+        <CameraValue Index="FocalDepth" Value="8"/>
+        <CameraValue Index="FalloffStart" Value="0.0002"/>
+        <CameraValue Index="FalloffEnd" Value="8"/>
+        <CameraValue Index="FalloffStartNear" Value="0.0002"/>
+        <CameraValue Index="FalloffEndNear" Value="0.0002"/>
+        <CameraValue Index="BokehFStop" Value="0.0097"/>
+        <CameraValue Index="BokehMaxCoC" Value="1"/>
+    </ObjectCamera>
+    <ObjectDoodad Id="1979921913" Position="36.5,58.5,7.9987" Rotation="5.2736" Scale="1,1,1" Type="ZerusLargeTree" Pitch="0.002" Roll="0.1015">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="675847540" Variation="1" Position="32.5,9,8" Rotation="3.729" Scale="0.9187,0.9187,0.9187" Type="Void_CrackSplat">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1930359486" Variation="2" Position="37,17,7.9587" Rotation="6.0427" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1849731732" Variation="2" Position="24,15.5,9.9982" Rotation="6.0034" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1201476865" Variation="2" Position="27.5,13,8.0034" Rotation="2.092" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1483061910" Variation="10" Position="23.5498,14,8.0412" Rotation="4.7121" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1355068930" Position="32,58.5,8.186" Rotation="2.9797" Scale="2,2,2" Type="ProtossWarpInPadFlat" TintColor="117,120,1 0.990000" BoostexCliffLevel="1" Pitch="5.628" Roll="6.168">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1772499344" Variation="4" Position="37.5,55,7.8686" Rotation="2.5131" Scale="1,1,1" Type="CompoundSewers_GlassWalls">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1644646067" Position="42,61,11.9814" Scale="0.65,0.65,0.65" Type="Purifier_Warp_In_Pad" TintColor="255,183,185 0.350000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="443821615" Position="24,26,12.0065" Scale="1,1,1" Type="LoSBlockerColumn">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="379763350" Position="40,17.5,9.9987" Rotation="1.388" Scale="0.5998,0.5998,0.5998" Type="FurnaceSmall" TintColor="149,149,149 2.000000" Pitch="6.2812" Roll="6.1782">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="653825352" Position="30,60,8.0075" Scale="1,1,1" Type="PortCity_GroundLights">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1513251150" Position="30.5,37.5,3.5324" Rotation="5.2902" Scale="1,1,1" Type="GasGiantStorm">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1626388692" Variation="5" Position="25,21.5,9.103" Rotation="1.232" Scale="1,1,1" Type="BattleStation_FloodLight" TintColor="141,141,141 0.400000" Pitch="6.0363" Roll="0.0773">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="794495316" Variation="1" Position="25.5,34.5,9.1718" Rotation="0.2446" Scale="1,1,1" Type="StarshipIceWorldIceSamples" TintColor="150,91,33 2.000000" Pitch="0.5888" Roll="0.4492">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="723972054" Variation="14" Position="27.5,56.5,7.917" Rotation="4.8266" Scale="0.9211,0.9211,0.9211" Type="ZerusTree" TintColor="176,176,176">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1171768930" Position="28.5,16,7.9953" Scale="0.914,0.914,0.914" Type="TheVoid_RubblePile">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1897783232" Position="31,42,7.9816" Rotation="2.6462" Scale="1.032,1.032,1.032" Type="Void_CrackSplat">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="362742190" Variation="12" Position="29,14.5,7.9975" Scale="1.1225,1.1225,1.1225" Type="Elsecaro_Curb" TintColor="253,0,6">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1308149862" Variation="9" Position="27,1,7.9992" Rotation="1.5532" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="166,166,166 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1389163120" Variation="2" Position="25,32.5,7.9074" Rotation="0.417" Scale="1,1,1" Type="StarshipIceWorldIceSamples" TintColor="150,91,33 2.000000" Pitch="0.0156" Roll="0.2263">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1770774520" Position="27,10.5,6.007" Rotation="2.6523" Scale="1,1,1" Type="SpaceFloodLight" Pitch="6.0747" Roll="0.1174">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1609747354" Variation="12" Position="36.5,54,8.1936" Scale="1.2995,1.2995,1.2995" Type="Elsecaro_Curb" TintColor="82,253,0 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1336611881" Position="40,26,14.1198" Rotation="1.1494" Scale="1.028,1.028,1.028" Type="FireMedium" TintColor="231,150,1 0.500000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1119965671" Position="32,57.5,6.2194" Rotation="4.507" Scale="2,2,2" Type="ZerusLightning" TintColor="53,129,255">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1961008328" Variation="1" Position="28.5,56.5,7.9167" Scale="1,1,1" Type="Aiur_ChiseledRock_Brown">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="471491722" Variation="2" Position="27,17.5,7.9182" Rotation="6.0427" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1219351048" Position="34,60,8.0075" Scale="1,1,1" Type="PortCity_GroundLights">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="21240129" Position="37.5,11,5.9975" Rotation="3.7478" Scale="1,1,1" Type="SpaceFloodLight" Pitch="6.051" Roll="0.1437">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="92994387" Variation="10" Position="40.45,14,8.0588" Rotation="1.5705" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1852757182" Variation="9" Position="37,14,7.9621" Rotation="4.7121" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="166,166,166 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="704130711" Variation="6" Position="26.5,55,7.8686" Scale="1,1,1" Type="CompoundSewers_GlassWalls" Roll="6.187">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1368697537" Variation="2" Position="36,13.5,7.9235" Rotation="6.0427" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="780533817" Variation="2" Position="35.5,56.5,7.9575" Scale="1,1,1" Type="Aiur_ChiseledRock_Brown">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1656174242" Variation="2" Position="37,16,7.9353" Rotation="6.0427" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="396281190" Position="40,26,11.9511" Scale="1,1,1" Type="LoSBlockerColumn">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="2077167617" Position="24,26,14.1235" Rotation="1.1494" Scale="1.028,1.028,1.028" Type="FireMedium" TintColor="231,150,1 0.500000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="924367660" Variation="1" Position="37.5,55.5,7.9987" Rotation="4.6452" Scale="1,1,1" Type="SpaceFloodLight">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="659921907" Variation="1" Position="27.5,19.5,7.9921" Scale="1.0307,1.0307,1.0307" Type="TheVoid_RubblePile">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="170635679" Variation="2" Position="27,9.5,8.012" Rotation="1.5705" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="726579318" Variation="2" Position="36,58.5,7.9787" Rotation="2.0393" Scale="0.75,0.75,0.75" Type="Elsecaro_Bush4x4" TintColor="202,202,202 0.500000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1943620941" Position="24,17.5,9.9982" Rotation="1.7631" Scale="0.5998,0.5998,0.5998" Type="FurnaceSmall" TintColor="149,149,149 2.000000" Pitch="6.2812" Roll="6.1782">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1032150921" Variation="5" Position="39,21.5,8.985" Rotation="4.9677" Scale="1,1,1" Type="BattleStation_FloodLight" TintColor="141,141,141 0.400000" Pitch="6.1093" Roll="0.0168">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="94892566" Variation="5" Position="37,55.5,7.688" Rotation="2.706" Scale="1.0805,1.0805,1.0805" Type="ZerusWaterPlant" TintColor="202,202,202 0.500000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1543813081" Variation="3" Position="35,58,7.9387" Rotation="5.9555" Scale="0.9,0.9,0.9" Type="AiurTree_Ex2" TintColor="202,202,202 0.500000" Pitch="0.0012" Roll="0.1132">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="189029323" Variation="7" Position="38.75,13.5,9.518" Rotation="3.1452" Scale="1,1,1" Type="BattleStation_CliffPlatform" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1802710659" Variation="5" Position="32.5,26.5,7.9804" Rotation="0.0385" Scale="0.9545,0.9545,0.9545" Type="Void_CrackSplat">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="642663534" Variation="2" Position="27,1,7.9992" Rotation="1.5705" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1774352265" Variation="5" Position="32,6,8.001" Rotation="4.8144" Scale="1.1364,1.1364,1.1364" Type="Blast_Craters_Big">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1130203439" Variation="5" Position="28,59,7.9987" Scale="1,1,1" Type="Purifier_Trees_Tall" Pitch="0.0085" Roll="6.2045">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="741852498" Variation="1" Position="40.5,2.5,9.9807" Rotation="2.5676" Scale="1.0534,1.0534,1.2238" Type="Elsecaro_Bush1x1" Pitch="0.0046" Roll="6.1306">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1537884480" Variation="2" Position="37,5.5,8.0073" Rotation="4.7116" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1901539604" Variation="2" Position="27,16,7.9267" Rotation="6.0427" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="956608130" Variation="9" Position="40,24,10.009" Rotation="5.4487" Scale="1,1,1" Type="BattleStation_CliffPlatform_Short">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1357646070" Variation="2" Position="27,5.5,8.0036" Rotation="1.5705" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="820971757" Position="36,19,8.0078" Scale="1.0957,1.0957,1.0957" Type="TheVoid_RubblePile">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1366187510" Variation="12" Position="36,14.5,8.0036" Scale="1.1225,1.1225,1.1225" Type="Elsecaro_Curb" TintColor="253,0,6">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="963718355" Variation="2" Position="38.5,33.5,7.8146" Rotation="3.2585" Scale="1,1,1" Type="StarshipIceWorldIceSamples" TintColor="150,91,33 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1152967618" Variation="4" Position="34,38.5,8.0021" Rotation="5.6477" Scale="1.0461,1.0461,1.0461" Type="Void_CrackSplat">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1971776280" Position="32,19,7.984" Scale="0.9375,0.9375,0.9375" Type="TheVoid_RubblePile">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1565853465" Variation="1" Position="39,35.5,8.5688" Rotation="3.9123" Scale="1,1,1" Type="StarshipIceWorldIceSamples" TintColor="150,91,33 2.000000" Pitch="0.0974" Roll="0.4736">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1551081912" Variation="5" Position="27,55.5,7.7421" Rotation="5.0288" Scale="1.1157,1.1157,1.1157" Type="ZerusWaterPlant" TintColor="202,202,202 0.500000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1711132052" Position="32.5,56,7.9167" Rotation="1.071" Scale="1,1,1" Type="Void_Nebula_Storm">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="248990306" Variation="2" Position="36.5,55.5,7.9577" Rotation="5.2956" Scale="0.982,0.982,0.982" Type="ZerusTree" TintColor="134,134,134 0.790000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="869317000" Variation="5" Position="31.5,49,8.0112" Rotation="1.8051" Scale="1.0041,1.0041,1.0041" Type="Void_CrackSplat">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1567379641" Variation="12" Position="28.5,54,8.1887" Scale="1.2998,1.2998,1.2998" Type="Elsecaro_Curb" TintColor="82,253,0 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1077439786" Variation="3" Position="32,2.5,7.8" Rotation="3.1413" Scale="1,1,1" Type="DefendersCity_Warehouse">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="587549571" Variation="4" Position="29,57.5,7.9575" Scale="1,1,1" Type="Aiur_ChiseledRock_Brown">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1351986752" Variation="9" Position="23,24,9.9975" Rotation="0.1604" Scale="1,1,1" Type="BattleStation_CliffPlatform_Short">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1930345090" Variation="2" Position="27.5,59,7.9987" Rotation="2.5925" Scale="1.001,1.001,1.001" Type="Elsecaro_Bush4x4" TintColor="202,202,202 0.500000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1956737365" Position="32.5,16,7.9946" Scale="0.9621,0.9621,0.9621" Type="TheVoid_RubblePile">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1313804153" Variation="4" Position="29,59,8.0034" Rotation="5.1628" Scale="0.9194,0.9194,0.9194" Type="AiurTree_Ex2" TintColor="202,202,202 0.500000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="889036308" Variation="7" Position="26.0998,13.5,9.5292" Rotation="3.1457" Scale="1,1,1" Type="BattleStation_CliffPlatform" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1898572172" Variation="1" Position="23.5,2,10.0126" Rotation="0.645" Scale="1.0095,1.3403,1.5261" Type="Elsecaro_Bush1x1">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1184986855" Variation="2" Position="37,10,6.0024" Rotation="4.7116" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="468135764" Variation="2" Position="29,15.5,7.9096" Scale="0.906,0.906,0.906" Type="TheVoid_RubblePile">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1618852060" Position="40.5,15,9.9807" Rotation="0.7687" Scale="1,1,1" Type="TheVoid_LightRed">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1722789931" Variation="2" Position="37,9.8498,8.0004" Rotation="4.7116" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1537489025" Variation="1" Position="26.5,55.5,7.9577" Rotation="1.9562" Scale="1,1,1" Type="SpaceFloodLight">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1544240514" Variation="2" Position="37,14,7.9887" Rotation="4.7116" Scale="1,1,1" Type="BattleStation_Floor_Interior_Short" TintColor="149,149,149 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1129639336" Position="32,1.5,7.9987" Scale="1,1,1" Type="DOM_Corridor">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectPoint Id="1103268859" Position="32,5.5,0" Scale="1,1,1" Type="StartLoc" Name="PointStartField1" Color="0,0,0,0">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectPoint>
+    <ObjectPoint Id="752696478" Position="32,62,0" Scale="1,1,1" Type="Normal" Name="PointField1FinishArea" Color="0,0,0,0"/>
+</PlacedObjects>

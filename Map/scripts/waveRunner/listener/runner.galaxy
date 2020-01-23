@@ -1,0 +1,44 @@
+include "scripts/waveRunner/waveRunnerData";
+include "scripts/waveRunner/camera/runner";
+include "scripts/waveRunner/manager/wave";
+include "scripts/waveRunner/player/runner";
+include "scripts/util";
+
+bool isLastWave() {
+    if (runnerWaveCurrentIndex == runnerWaveWavesAmount - 1) {
+        message("Congratz goal reached!");
+        runnerWaveCurrentIndex += 1;
+    }
+
+    if (runnerWaveCurrentIndex == runnerWaveWavesAmount) {
+        return true;
+    }
+
+    return false;
+}
+
+bool onGoalReached(bool testConds, bool runActions) {
+    fixed cameraSwapTime = 5.0;
+    int playerIndex = EventPlayer();
+    unit runnerUnit = EventUnit();
+
+
+    runnerClearWave(playerIndex);
+    
+    if (allRunnersClearedCurrentWave() && !isLastWave()) {
+        nextRunnerWave();
+    }  
+
+    setCameraToOtherSide(playerIndex, runnerUnit);
+
+    return true;
+}
+
+bool onWaveRunnerRunnerTeleportToStart(bool testConds, bool runActions) {
+    int playerIndex = EventPlayer();
+    unit runnerUnit = EventUnit();
+
+    initWaveRunnerStartCamera(playerIndex, runnerUnit, 3.0);
+    UnitSelect(runnerUnit, playerIndex, true);
+    return true;
+}

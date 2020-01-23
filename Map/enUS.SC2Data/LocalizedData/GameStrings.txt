@@ -1,0 +1,75 @@
+﻿Abil/Name/Charge2=Charge Copy
+Abil/Name/ProgressRally2=Progress Rally Copy
+Abil/Name/Warpable2=Warpable Copy
+Abil/Name/attack2=Attack Copy
+Abil/Name/move2=Move Copy
+Abil/Name/move4=Move Copy 3
+Abil/Name/stop2=Stop Copy
+Abil/Name/stop3=Stop Copy 2
+Abil/TargetMessage/attack2=<IMG path="Assets\Textures\tutorialmouseleftbuttondown.dds" alignment="absolutemiddle"/>   Ground to Auto-attack<n/><IMG path="Assets\Textures\tutorialmouserightbuttondown.dds" alignment="absolutemiddle"/>   Cancel
+Behavior/Name/PowerUserWarpable2=Warping in Copy
+Behavior/Tooltip/PowerUserWarpable2=Unit is being materialized by a Warp Gate.
+Button/Name/Attack2=Attack Copy
+Button/Name/Charge2=Charge Copy
+Button/Name/Move2=Move Copy
+Button/Name/Move3=Move Copy 2
+Button/Name/MoveHoldPosition2=Hold Position Copy
+Button/Name/MovePatrol2=Patrol Copy
+Button/Name/Rally2=Set Rally Point Copy
+Button/Name/Rally3=Set Rally Point Copy 2
+Button/Name/Stop2=Stop Copy
+Button/Name/Stop3=Stop Copy 2
+Button/Tooltip/Attack2=Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.
+Button/Tooltip/Charge2=Allows Zealots to intercept nearby enemies. Also increases the movement speed of Zealots. Ability can only be used once every <d ref="Abil,Charge,Cost.Cooldown.TimeUse"/> seconds.
+Button/Tooltip/Move2=Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.
+Button/Tooltip/Move3=Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.
+Button/Tooltip/MoveHoldPosition2=Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.
+Button/Tooltip/MovePatrol2=Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.
+Button/Tooltip/Rally2=Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.
+Button/Tooltip/Rally3=Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.
+Button/Tooltip/Stop2=Orders selected units to cancel all orders and stop moving.
+Button/Tooltip/Stop3=Orders selected units to cancel all orders and stop moving.
+Button/Tooltip/ZealotWaveRunnerPlayer=Powerful melee warrior.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+DocInfo/DescLong=Alpha
+DocInfo/DescShort=1-10
+DocInfo/Name=Pixit Party
+Effect/Name/PsiBlades2=Psi Blades (Damage) Copy
+Effect/Name/PsiBladesBurst2=Psi Blades Copy
+LoadingScreen/Subtitle=Escape the Pixits
+LoadingScreen/Title=Pixit Party
+MapInfo/Player00/Name=Player 1
+MapInfo/Player01/Name=Player 2
+MapInfo/Player02/Name=Player 3
+MapInfo/Player03/Name=Player 4
+MapInfo/Player04/Name=Player 5
+MapInfo/Player05/Name=Player 6
+MapInfo/Player06/Name=Player 7
+MapInfo/Player07/Name=Player 8
+MapInfo/Player08/Name=Player 9
+MapInfo/Player09/Name=Player 10
+MapInfo/Player10/Name=Hostile
+MapInfo/Player11/Name=Hostile
+MapInfo/Team00/Name=Team 1
+MapInfo/Team01/Name=Team 2
+Param/Value/F7D0B3DC=Henlo
+SimpleDisplay/Attack2=<s val="@@@SimpleCommandRow">%hotkey</c> then</s> <IMG path="Assets\Textures\tutorialmouseleftbuttondown.dds" alignment="absolutemiddle"/> <s val="@@@SimpleCommandRow">ground to Auto-attack</s>
+SimpleDisplay/Move2=<IMG path="Assets\Textures\tutorialmouserightbuttondown.dds" alignment="absolutemiddle"/> <s val="@@@SimpleCommandRow">to Move</s>
+SimpleDisplay/Move3=<IMG path="Assets\Textures\tutorialmouserightbuttondown.dds" alignment="absolutemiddle"/> <s val="@@@SimpleCommandRow">to Move</s>
+Unit/Name/ZealotWaveRunnerPlayer=Runner
+Upgrade/Name/Charge2=Charge Copy
+Upgrade/Name/Charge3=Charge Copy 2
+Upgrade/Name/ProtossGroundArmors2=Protoss Ground Armors Copy
+Upgrade/Name/ProtossGroundArmorsLevel12=Protoss Ground Armor Level 4
+Upgrade/Name/ProtossGroundArmorsLevel22=Protoss Ground Armor Level 4
+Upgrade/Name/ProtossGroundArmorsLevel32=Protoss Ground Armor Level 4
+Upgrade/Name/ProtossGroundWeapons2=Protoss Ground Weapons Copy
+Upgrade/Name/ProtossGroundWeaponsLevel12=Protoss Ground Weapons Level 4
+Upgrade/Name/ProtossGroundWeaponsLevel22=Protoss Ground Weapons Level 4
+Upgrade/Name/ProtossGroundWeaponsLevel32=Protoss Ground Weapons Level 4
+Upgrade/Name/ProtossShields2=Protoss Shields Copy
+Upgrade/Name/ProtossShieldsLevel12=Protoss Shields Level 4
+Upgrade/Name/ProtossShieldsLevel22=Protoss Shields Level 4
+Upgrade/Name/ProtossShieldsLevel32=Protoss Shields Level 4
+Variant001/ModeDesc=All settings may be customized.
+Variant001/ModeName=Custom
+Weapon/Name/PsiBlades2=Psi Blades Copy

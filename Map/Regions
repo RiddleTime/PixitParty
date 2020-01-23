@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Regions>
+    <region id="1">
+        <name value="WaveRunnerUnitBurn"/>
+        <shape type="rect">
+            <quad value="26,13.001,38,15.001"/>
+        </shape>
+    </region>
+    <region id="3">
+        <name value="WaveRunnerUnitStart"/>
+        <shape type="rect">
+            <quad value="26.0007,51.5998,38.0007,53.5998"/>
+        </shape>
+    </region>
+    <region id="4">
+        <name value="WaveRunnerRegion"/>
+        <shape type="rect">
+            <quad value="25.9101,15.5002,38.0898,59.5"/>
+        </shape>
+    </region>
+    <region id="5">
+        <name value="Goal"/>
+        <shape type="circle">
+            <center value="32.0012,58.5012"/>
+            <radius value="1.875"/>
+        </shape>
+    </region>
+    <region id="2">
+        <name value="WaveRunnerGoalToStart"/>
+        <shape type="circle">
+            <center value="42,61"/>
+            <radius value="0.75"/>
+        </shape>
+    </region>
+</Regions>

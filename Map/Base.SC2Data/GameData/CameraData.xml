@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CCamera id="CameraField1">
+        <ParamInitial index="FieldOfView" value="26.000000"/>
+        <ParamInitial index="Distance" value="41.000000"/>
+        <ParamInitial index="BokehFStop" value="0.016400"/>
+        <ParamInitial index="BokehMaxCoC" value="1.000000"/>
+    </CCamera>
+</Catalog>

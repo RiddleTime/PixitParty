@@ -1,0 +1,10 @@
+﻿Button/Hotkey/Attack2=A
+Button/Hotkey/Charge2=C
+Button/Hotkey/Move2=M
+Button/Hotkey/Move3=M
+Button/Hotkey/MoveHoldPosition2=H
+Button/Hotkey/MovePatrol2=P
+Button/Hotkey/Rally2=Y
+Button/Hotkey/Rally3=Y
+Button/Hotkey/Stop2=S
+Button/Hotkey/Stop3=S

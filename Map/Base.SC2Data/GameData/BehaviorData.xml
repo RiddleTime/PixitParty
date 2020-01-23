@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorPowerUser id="PowerUserWarpable2">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <PowerLink value="PowerSource"/>
+        <PlacementMinPowerLevel value="1"/>
+        <Flags index="KillIfUnpowered" value="1"/>
+        <PoweredWhileUnderConstruction value="1"/>
+        <PowerStageArray/>
+    </CBehaviorPowerUser>
+</Catalog>

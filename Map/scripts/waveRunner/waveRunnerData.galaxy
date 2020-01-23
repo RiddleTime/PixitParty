@@ -1,0 +1,38 @@
+include "scripts/player/players";
+
+/// Structs
+struct RunnerGate {
+    int gateStart;
+    int gateSize;
+    bool direction; // true = left to right, false = righ to left
+    bool shouldSwapDirection; // swap direction when gate end or start has been reached
+};
+
+struct RunnerWave {
+    fixed sendTime;
+    RunnerGate[4] gates;
+    int gateCount;
+};
+
+struct WaveRunner {
+    RealPlayer player;
+    int waveClearedIndex;
+};
+
+/// Matrix Data, units are spawned by their string ID
+const int matrixWidth = 13;
+const int matrixHeight = 2;
+string[matrixWidth][matrixHeight] unitMatrix;
+
+
+unitgroup unitGroupActiveWave = UnitGroupEmpty();
+int enemyPlayerIndex = -1;
+
+unitref[10] playerUnits;
+
+/// wave data
+RunnerWave[12] runnerWaves;
+RunnerWave runnerWaveCurrent;
+
+int runnerWaveCurrentIndex = -1;
+const int runnerWaveWavesAmount = 12;

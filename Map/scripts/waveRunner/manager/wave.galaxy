@@ -1,0 +1,136 @@
+include "scripts/waveRunner/waves";
+include "scripts/waveRunner/waveRunnerData";
+include "scripts/waveRunner/ui/textTags";
+
+trigger waveUnitRegionTrigger = TriggerCreate("onRunnerUnitRegionEntered");
+trigger waveRunnerUnitSender = TriggerCreate("sendWaveRunnerWave");
+timer waveRunnerWaveTimer;
+
+
+static void updateCurrentWaveGates() {
+    int i;
+    int gateEnd;
+    for (i = 0; i < runnerWaveCurrent.gateCount; i += 1) {
+        if (runnerWaveCurrent.gateCount > i) { 
+            gateEnd = runnerWaveCurrent.gates[i].gateStart + runnerWaveCurrent.gates[i].gateSize;
+        
+            if (runnerWaveCurrent.gates[i].shouldSwapDirection) {
+                if (gateEnd >= matrixWidth) {
+                    runnerWaveCurrent.gates[i].direction = false;
+                }
+                if (runnerWaveCurrent.gates[i].gateStart <= 0) {
+                    runnerWaveCurrent.gates[i].direction = true;
+                }
+            } else {
+                if (gateEnd >= matrixWidth) {
+                    runnerWaveCurrent.gates[i].gateStart = 0;
+                }
+        
+                if (runnerWaveCurrent.gates[i].gateStart < 0) {
+                    runnerWaveCurrent.gates[i].gateStart = matrixWidth - 1;
+                }
+            }
+        
+            if (runnerWaveCurrent.gates[i].direction) { 
+                runnerWaveCurrent.gates[i].gateStart += 1; // move gate right
+            } else {
+                runnerWaveCurrent.gates[i].gateStart -= 1; // move gate left
+            }    
+        }
+    }
+}
+
+static bool isPositionInGate(int x, int y) {
+    int i;
+
+    for (i = 0; i < 4; i += 1) {
+        if  (i < runnerWaveCurrent.gateCount) {
+            if (x < runnerWaveCurrent.gates[i].gateStart + runnerWaveCurrent.gates[i].gateSize && x >= runnerWaveCurrent.gates[i].gateStart) {
+                return true;
+            }
+        }
+    }
+    
+    return false;
+}
+
+static unitgroup spawnUnitMatrix() {
+    region regionStart = RegionFromName("WaveRunnerUnitStart");
+    point pointLeftBottom = RegionGetBoundsMin(regionStart);
+
+    int x = 0;
+    int y = 0;
+    point pointTemp;
+
+    unitgroup tempGroup = UnitGroupEmpty(); 
+    
+    for (x = 0; x < matrixWidth; x += 1) {
+        if (isPositionInGate(x, y)) { // skip if gate it is this position
+            continue;
+        }
+
+        for (y = 0; y < matrixHeight; y += 1) {
+            if (unitMatrix[x][y] != null) {
+                pointTemp = PointWithOffset(pointLeftBottom, x, y);
+                // message("Spawning \'"+ unitMatrix[x][y] + "\' at: X: " + FixedToString(PointGetX(pointTemp), 2) + ", Y: " + FixedToString(PointGetY(pointTemp), 2));
+                UnitCreate(1, unitMatrix[x][y], 0, enemyPlayerIndex, pointTemp, 270.0);
+                UnitGroupAdd(tempGroup, UnitLastCreated());
+            }
+        }
+    }
+
+    return tempGroup;
+}
+
+// Triggers a new wave and updates the gate for the next wave
+bool sendWaveRunnerWave(bool testConds, bool runActions) {
+    // region base points
+    point startBottomLeft = RegionGetBoundsMin(RegionFromName("WaveRunnerUnitStart"));
+    point burnBottomLeft = RegionGetBoundsMin(RegionFromName("WaveRunnerUnitBurn"));
+    
+    // loop variables
+    int i;
+    point pointUnit;
+    point pointTarget;
+    fixed xOffset;
+    fixed yOffset;
+
+    // spawn units   
+    unitgroup matrixUnits = spawnUnitMatrix();
+    unitGroupActiveWave = matrixUnits;
+
+    UnitGroupLoopBegin(matrixUnits);
+    for (i = 0; i < UnitGroupCount(matrixUnits, c_unitCountAlive); i += 1) {
+        pointUnit = UnitGetPosition(UnitGroupLoopCurrent());
+        xOffset = PointGetX(pointUnit) - PointGetX(startBottomLeft);
+        yOffset = PointGetY(pointUnit) - PointGetY(startBottomLeft);
+        pointTarget = PointWithOffset(burnBottomLeft, xOffset, yOffset);
+        
+        UnitIssueOrder(UnitGroupLoopCurrent(), OrderTargetingPoint(AbilityCommand("move", 0), pointTarget), c_orderQueueReplace);
+
+        UnitGroupLoopStep();
+    } 
+    UnitGroupLoopEnd();
+
+    // do 1 step with the gate logic
+    updateCurrentWaveGates();
+
+    return true;
+}
+
+// Creates a timer which starts a new wave periodically.
+static void initWaveRunnerTimer() {    
+    TriggerDestroy(waveRunnerUnitSender);
+    waveRunnerUnitSender = TriggerCreate("sendWaveRunnerWave");
+    waveRunnerWaveTimer = TimerCreate();
+    TriggerAddEventTimer(waveRunnerUnitSender, waveRunnerWaveTimer);
+    TimerStart(waveRunnerWaveTimer, runnerWaveCurrent.sendTime, true, c_timeReal);
+}
+
+// when the max amount of runner waves have cleared we should stop the game and declare a winner.. maybe time based? record runs?
+void nextRunnerWave() {
+    setRunnerWave(runnerWaveCurrentIndex + 1);
+
+    initWaveRunnerTimer();
+    updateDebugTags();
+}

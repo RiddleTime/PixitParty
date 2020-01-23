@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="Frame" name="PixitPartyWaveRunnerPlayers">
+        <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+        <Anchor side="Left" relative="$parent" pos="Max" offset="0"/>
+        <Width val="200"/>
+
+    </Frame>
+</Desc>

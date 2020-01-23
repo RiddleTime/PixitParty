@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilAugment id="Charge2">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Charge" Requirements="UseCharge"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AbilCmd value="attack,Execute"/>
+        <Cost>
+            <Cooldown Link="Charge" Location="Unit" TimeUse="10"/>
+        </Cost>
+        <Effect value="Charge"/>
+        <AutoCastValidatorArray value="CasterNotHoldingPosition"/>
+    </CAbilAugment>
+    <CAbilEffectInstant id="Explode">
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AutoCastRange value="1"/>
+        <CmdButtonArray index="Execute" Requirements="HaveSmartServos">
+            <Flags index="AllowSelfCast" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilRally id="ProgressRally2">
+        <EditorCategories value="Race:Neutral,AbilityorEffectType:Structures"/>
+        <Flags index="ShowWhileMerging" value="1"/>
+        <Flags index="ShowWhileWarping" value="1"/>
+    </CAbilRally>
+    <CAbilWarpable id="Warpable2">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <PowerUserBehavior value="PowerUserWarpable2"/>
+    </CAbilWarpable>
+    <CAbilAttack id="attack2">
+        <TargetMessage value="Abil/TargetMessage/attack2"/>
+        <MinAttackSpeedMultiplier value="0.25"/>
+        <MaxAttackSpeedMultiplier value="128"/>
+    </CAbilAttack>
+    <CAbilMove id="move2">
+        <FleeRange value="5"/>
+        <FleeTime value="5"/>
+        <FollowRangeSlop value="1"/>
+        <FollowAcquireRange value="6"/>
+        <MinPatrolDistance value="1"/>
+    </CAbilMove>
+    <CAbilMove id="move3">
+        <FleeRange value="5"/>
+        <FleeTime value="5"/>
+        <FollowRangeSlop value="1"/>
+        <FollowAcquireRange value="6"/>
+        <MinPatrolDistance value="1"/>
+    </CAbilMove>
+    <CAbilMove id="move4">
+        <FleeRange value="5"/>
+        <FleeTime value="5"/>
+        <FollowRangeSlop value="1"/>
+        <FollowAcquireRange value="6"/>
+        <MinPatrolDistance value="1"/>
+    </CAbilMove>
+    <CAbilStop id="stop2">
+        <CmdButtonArray index="HoldFire" DefaultButtonFace="HoldFireSpecial"/>
+    </CAbilStop>
+    <CAbilStop id="stop3">
+        <CmdButtonArray index="Stop" Requirements="HaveSmartServos"/>
+        <CmdButtonArray index="HoldFire" DefaultButtonFace="HoldFireSpecial"/>
+    </CAbilStop>
+</Catalog>

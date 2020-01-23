@@ -1,0 +1,37 @@
+struct RealPlayer {
+    int id;
+    text name;
+};
+
+RealPlayer[10] realPlayers;
+int realPlayerCount = 0; // makes the realPlayers array dynamic
+
+bool isComputerPlayer(int playerIndex) {
+    return PlayerIsUnderAIControl(playerIndex) || PlayerType(playerIndex) == c_playerTypeComputer;
+}
+
+bool initRealPlayers(bool testConds, bool runActions) {
+    playergroup active = PlayerGroupActive();
+    int i = 0;
+    int playerIndex;
+
+    PlayerGroupLoopBegin(active);
+    for (; !PlayerGroupLoopDone(); PlayerGroupLoopStep()) {
+        playerIndex = PlayerGroupLoopCurrent();
+
+        if (isComputerPlayer(playerIndex)) {
+            continue;
+        }
+
+        realPlayers[i].id = playerIndex;
+        realPlayers[i].name = PlayerName(playerIndex);
+
+        i += 1;
+    }
+    PlayerGroupLoopEnd();
+    
+    realPlayerCount = i;
+
+    return true;
+}
+

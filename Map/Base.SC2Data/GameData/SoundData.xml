@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="Protoss_BuildingPlacementSmall2" parent="UI">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_BuildingPlacementSmall0.wav"/>
+        <Pitch value="9.000000,9.000000"/>
+        <Volume value="-6.180000,-6.180000"/>
+    </CSound>
+    <CSound id="Sentry_HallucinationDeathSmall2" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Sentry\Sentry_HallucinationDeathSmall.wav"/>
+    </CSound>
+    <CSound id="Uni_DeathFXAcid">
+        <Pitch value="-31.429998,-27.430000"/>
+        <Volume value="-96.000000,-96.000000"/>
+    </CSound>
+    <CSound id="Uni_DeathFXAcid2" parent="Death">
+        <AssetArray File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid0.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid1.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid2.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid3.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid4.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid5.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid6.wav"/>
+        <Pitch value="-2.000000,2.000000"/>
+    </CSound>
+    <CSound id="Zealot_Attack2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Attack00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Attack01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Attack02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Attack03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Attack04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Attack05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Attack06.ogg"/>
+        <Flags index="Download" value="0"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_AttackImpact2" parent="Protoss_AttackImpactMediumSlice"/>
+    <CSound id="Zealot_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch5.wav"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="4"/>
+        <DupeThresholdPoints/>
+        <DupeThresholdPoints Count="4" Volume="-3.000000"/>
+        <DupePrioritization value="Oldest"/>
+        <Pitch value="-0.890000,1.640000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-10.480000,-10.480000"/>
+    </CSound>
+    <CSound id="Zealot_Death2" parent="Death">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death01.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death01.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death02.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death03.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death04.wav"/>
+        <Pitch value="-0.500000,0.500000"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_Death3" parent="Death">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death01.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death01.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death02.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death03.wav"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Death04.wav"/>
+        <Pitch value="-0.500000,0.500000"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_DeathFX2" parent="Protoss_DeathFX"/>
+    <CSound id="Zealot_Help2" parent="Alert">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\ZealotVoid_Help00.ogg"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_Pissed2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed06.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed07.ogg"/>
+        <Flags index="Download" value="0"/>
+        <Select value="Sequential"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_Pissed3" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed06.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Pissed07.ogg"/>
+        <Flags index="Download" value="0"/>
+        <Select value="Sequential"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_Ready2" parent="Ready">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Ready00.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_Ready3" parent="Ready">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Ready00.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_What2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What06.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_What3" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_What06.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_Yes2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes05.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zealot_Yes3" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\Zealot\Zealot_Yes05.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Zergling_Attack2" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Attack0.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Attack1.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Attack2.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Attack3.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Attack4.ogg"/>
+        <Flags index="Download" value="0"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Zergling_AttackImpact2" parent="Zerg_AttackImpactSmallPierce"/>
+    <CSound id="Zergling_Death"/>
+    <CSound id="Zergling_Death2" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Death0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Death1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Death2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Death3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Death4.wav"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Zergling_DeathFXEviscerate2" parent="Uni_DeathFXEviscerate">
+        <EditorCategories value="Race:Zerg"/>
+    </CSound>
+    <CSound id="Zergling_DeathFXFire2" parent="Uni_DeathFXFire">
+        <EditorCategories value="Race:Zerg"/>
+    </CSound>
+    <CSound id="Zergling_Explode2" parent="Zerg_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\SharedEffects\Explosions\Zerg_ExplosionSmall0.wav" Pitch="-3.000000,6.000000" Volume="-3.000000,0.000000"/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\SharedEffects\Explosions\Zerg_ExplosionSmall1.wav" Pitch="-3.000000,6.000000" Volume="-3.000000,0.000000"/>
+        <DupeMuteCount value="10"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-1.000000,1.000000"/>
+    </CSound>
+    <CSound id="Zergling_Pissed2" parent="Pissed">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Pissed0.ogg"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Zergling_Ready2" parent="Ready">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Ready0.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Ready1.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Ready2.ogg"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Zergling_What2" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_What0.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_What1.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_What2.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_What3.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_What4.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_What5.ogg"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Zergling_Yes2" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Yes0.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Yes1.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Yes2.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Yes3.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Yes4.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Yes5.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_Yes6.ogg"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+</Catalog>

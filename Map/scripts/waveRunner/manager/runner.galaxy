@@ -1,0 +1,34 @@
+include "scripts/waveRunner/waveRunnerdata";
+include "scripts/waveRunner/camera/runner";
+include "scripts/player/players";
+include "scripts/waveRunner/manager/wave";
+
+// unitgroup waveRunners = UnitGroupEmpty();
+
+// Sets the players for this game, units + camer
+bool initRunners() {
+    unit tempUnit;
+    int playerIndex;
+    int i = 0;
+    playergroup active = PlayerGroupCopy(PlayerGroupActive());
+
+    PlayerGroupLoopBegin(active);
+    for (; !PlayerGroupLoopDone(); PlayerGroupLoopStep()) {
+        playerIndex = PlayerGroupLoopCurrent();
+        if (isComputerPlayer(playerIndex)) {
+            continue;
+        }
+        // message("player index: " + IntToString(playerIndex)); // comment because i don't want to see spam
+
+        UnitCreate(1, "ZealotWaveRunnerPlayer", 0, playerIndex, PointFromName("PointStartField1"), 90.0);      
+        tempUnit = UnitLastCreated();
+
+        initWaveRunnerStartCamera(playerIndex, tempUnit, 1.8);
+        UnitSelect(tempUnit, playerIndex, true);
+
+        TriggerAddEventUnitRange(waveUnitRegionTrigger, playerUnits[i], tempUnit, 0.6, true);
+        i += 1;        
+    }
+    PlayerGroupLoopEnd(); 
+    return true;
+}

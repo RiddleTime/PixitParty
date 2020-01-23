@@ -1,0 +1,106 @@
+include "scripts/waveRunner/waveRunnerdata";
+include "scripts/waveRunner/waves";
+include "scripts/util";
+
+include "scripts/waveRunner/camera/runner"
+include "scripts/waveRunner/listener/runner";
+include "scripts/waveRunner/listener/wave";
+include "scripts/waveRunner/manager/runner";
+include "scripts/waveRunner/manager/wave";
+include "scripts/waveRunner/player/runner";
+include "scripts/waveRunner/ui/textTags";
+include "scripts/waveRunner/ui/layouts";
+
+
+static void setEnemyPlayerIndex() {
+    playergroup active = PlayerGroupActive();
+    int i = 0;
+    int playerIndex;
+
+    PlayerGroupLoopBegin(active);
+    for (; i < PlayerGroupCount(active); i+=1) {
+        playerIndex = PlayerGroupLoopCurrent();
+        PlayerGetColorIndex(playerIndex, false);
+        if (PlayerType(playerIndex) == c_playerTypeComputer) {
+            enemyPlayerIndex = playerIndex;
+            PlayerGroupLoopEnd();
+            return;
+        }
+
+        PlayerGroupLoopStep();
+    }
+    PlayerGroupLoopEnd(); 
+}
+
+// Configures the wave matrix and fills it with units
+static void initUnitMatrix() { 
+    int x;
+    int y;
+    
+    for (x = 0; x < matrixWidth; x += 1) {
+        for (y = 0; y < matrixHeight; y += 1) {
+            unitMatrix[x][y] = "Zergling";
+        }
+    }
+}
+
+bool onRunnerUnitRegionEntered(bool testConds, bool runActions) {
+    unit enteringUnit = EventUnit();
+    unit playerUnit = EventUnitRangeUnit();
+
+    if (!UnitIsAlive(playerUnit)) {
+        return true;
+    }
+
+    if (StringFind(UnitGetType(enteringUnit), "Zergling", true) <= -1) {
+        return true;
+    }
+
+    UnitKill(playerUnit);
+    messagePlayer("You died from the wave, please come again.", UnitGetOwner(enteringUnit));
+
+    return true;
+}
+
+bool waveRunnerUnitDiedTrigger(bool testConds, bool runActions) {
+   unit diedUnit = EventUnit();
+   int playerIndex = EventPlayer();
+   point startPoint = PointFromName("PointStartField1");
+
+   if (playerIndex == enemyPlayerIndex) {
+       return true;
+   }
+
+   UnitSetPosition(diedUnit, startPoint, true);   
+   UnitRevive(diedUnit);
+   UnitSelect(diedUnit, playerIndex, true);
+   CameraApplyInfo(playerIndex, CameraInfoFromId(1558108070), 0.5, -1, 10.0, true);
+   Wait(0.5, c_timeReal);
+   CameraLookAtUnit(playerIndex, diedUnit);
+   return true;
+}
+
+// Entry point for WaveRunner MiniGame
+bool initWaveRunner(bool testConds, bool runActions) {
+    // initial data
+    initRunnerData();
+    initRunnerWaves();
+    initUnitMatrix();
+    setEnemyPlayerIndex();
+    enableWaveRunnerLayouts();
+
+    addWaveRunnerTextTags();
+
+    TriggerAddEventUnitRegion(TriggerCreate("regionBurnEnterTrigger"), null, RegionFromName("WaveRunnerUnitBurn"), true);
+    
+    TriggerAddEventUnitRegion(TriggerCreate("onGoalReached"), null, RegionFromName("Goal"), true);
+    TriggerAddEventUnitRegion(TriggerCreate("onWaveRunnerRunnerTeleportToStart"), null, RegionFromName("WaveRunnerGoalToStart"), true);
+
+    TriggerAddEventUnitDied(TriggerCreate("waveRunnerUnitDiedTrigger"), null);
+
+    initRunners();
+    nextRunnerWave();
+
+    
+    return true;
+}

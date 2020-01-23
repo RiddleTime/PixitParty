@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorModel id="GenericAttackDamageModel2" parent="GenericAttackModel"/>
+    <CActorSound id="GenericAttackDamageSound">
+        <Sound value=""/>
+    </CActorSound>
+    <CActorSound id="GenericAttackDamageSound2" parent="GenericAttackSound"/>
+    <CActorModel id="GenericAttackImpactModel2" parent="GenericAttackModel"/>
+    <CActorSound id="GenericAttackImpactSound">
+        <Sound value=""/>
+    </CActorSound>
+    <CActorSound id="GenericAttackImpactSound2" parent="GenericAttackSound"/>
+    <CActorModel id="GenericAttackLaunchModel2" parent="GenericAttackModel"/>
+    <CActorSound id="GenericAttackLaunchSound2" parent="GenericAttackSound"/>
+    <CActorModel id="ProtossFastWarpinMarker2" parent="ModelAnimationStyleContinuous">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Behavior.PowerUserWarpable2.Create; ValidateEffect SuperPower" Send="Create"/>
+        <On Terms="Behavior.PowerUserWarpable2.Destroy" Send="Destroy"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+        <Model value="ProtossFastWarpinMarker3"/>
+    </CActorModel>
+    <CActorUnit id="Zealot2" parent="GenericUnitStandard" unitName="ZealotWaveRunnerPlayer">
+        <Aliases value="_UnitSmall"/>
+        <Macros value="ChargingAnim"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <On Terms="Behavior.Charging.On" Send="ModelSuddenMotionStart"/>
+        <On Terms="Behavior.Charging.Off" Send="ModelSuddenMotionStop"/>
+        <On Terms="Behavior.Hallucination.On" Send="Create HallucinationBirthSoundSmall"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit IsHallucination" Send="DeathCustomize Hallucination"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Zealot_Land"/>
+        <Model value="Zealot3"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <BuildModel value="ZealotWarpIn3"/>
+        <DeathArray index="Normal" ModelLink="ZealotDeath3" SoundLink="Zealot_DeathFX2"/>
+        <DeathCustoms index="0" ModelLink="ZergSmallUnitDeathLow4" Name="AntiGravGeneric"/>
+        <DeathCustoms index="1" ModelLink="ProtossSmallUnitDeathLow4" Name="AntiGravProtoss"/>
+        <DeathCustoms index="2" ModelLink="TerranSmallUnitDeathLow4" Name="AntiGravTerran"/>
+        <DeathCustoms index="3" ModelLink="ZergSmallUnitDeathLow4" Name="AntiGravZerg"/>
+        <DeathCustoms index="4" ModelLink="Invisible4" Name="Vortex"/>
+        <DeathCustoms ModelLink="HallucinationDeath3" SoundLink="Sentry_HallucinationDeathSmall2" Name="Hallucination"/>
+        <DeathCustoms ActorModel="ZealotDeathRagdoll" ModelLink="ZealotDeathRagdoll3" Name="RagdollBasic">
+            <BodySquibs Name="None"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollSiegeTank" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollBaneling" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollUltraUnburrow" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms ActorModel="SpineCrawlerHurlDeathRagdollWithTeamColor" ModelLink="ZealotDeathRagdoll3" Name="RagdollSpineCrawlerHurl"/>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PlacementModel value="ZealotPlacement3"/>
+        <PlacementSound value="Protoss_BuildingPlacementSmall2"/>
+        <PortraitModel value="ZealotPortrait3"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="0.600000"/>
+            <RangeDown value="0.600000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMedium"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="3"/>
+        <BarOffset value="45"/>
+        <BarWidth value="42"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Protoss-Zealot.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <HighlightTooltip value="Unit/Name/Zealot2"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel0.dds"/>
+        <SoundArray index="Ready" value="Zealot_Ready3"/>
+        <SoundArray index="Help" value="Zealot_Help2"/>
+        <SoundArray index="What" value="Zealot_What3"/>
+        <SoundArray index="Yes" value="Zealot_Yes3"/>
+        <SoundArray index="Attack" value="Zealot_Attack2"/>
+        <SoundArray index="Pissed" value="Zealot_Pissed3"/>
+        <UnitIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Protoss-Zealot.dds"/>
+        </Wireframe>
+        <WireframeShield>
+            <Image value="Assets\Textures\Wireframe-Protoss-Zealot-Shield01.dds"/>
+            <Image value="Assets\Textures\Wireframe-Protoss-Zealot-Shield02.dds"/>
+            <Image value="Assets\Textures\Wireframe-Protoss-Zealot-Shield03.dds"/>
+        </WireframeShield>
+    </CActorUnit>
+    <CActorAction id="ZealotAttack2" parent="GenericAttack" effectAttack="PsiBlades2">
+        <LaunchAttachQuery Methods="AMFilterWeaponLeft"/>
+        <LaunchAssets Sound="Zealot_AttackLaunch2"/>
+        <LaunchModel value="GenericAttackLaunchModel2"/>
+        <LaunchSound value="GenericAttackLaunchSound2"/>
+        <ContainerModel value="GenericAttackLaunchModel2"/>
+        <ContainerSound value="GenericAttackLaunchSound2"/>
+        <ImpactMap index="None" Sound="Zealot_AttackImpact2"/>
+        <ImpactModel value="GenericAttackImpactModel2"/>
+        <ImpactSound value="GenericAttackImpactSound2"/>
+        <ImpactPhysics>
+            <Name value="Attack00"/>
+            <MatchKeys value="Basic"/>
+            <AttackAnimProps value="00"/>
+            <Physics value="ZealotAttackDeathForce00"/>
+        </ImpactPhysics>
+        <ImpactPhysics>
+            <Name value="Attack01"/>
+            <MatchKeys value="Basic"/>
+            <AttackAnimProps value="01"/>
+            <Physics value="ZealotAttackDeathForce01"/>
+        </ImpactPhysics>
+        <ImpactPhysics>
+            <Name value="Attack02"/>
+            <MatchKeys value="Basic"/>
+            <AttackAnimProps value="02"/>
+            <Physics value="ZealotAttackDeathForce02"/>
+        </ImpactPhysics>
+        <DamageModel value="GenericAttackDamageModel2"/>
+        <DamageSound value="GenericAttackDamageSound2"/>
+        <AcquisitionYawHalfArc value="25.000000"/>
+        <AcquisitionPitchHalfArc value="25.000000"/>
+        <ShieldFlashType value="Header"/>
+    </CActorAction>
+    <CActorSound id="Zealot_Death2" parent="SoundOneShot">
+        <On Terms="UnitDeathCustomize.ZealotWaveRunnerPlayer; ValidateUnit IsNotHallucination; PassChance 25.000000" Send="Create"/>
+        <Sound value="Zealot_Death3"/>
+    </CActorSound>
+    <CActorUnit id="Zergling2" parent="GenericBurrowerStandard" unitName="WaveRunnerZergling">
+        <Aliases value="_UnitSmall"/>
+        <Macros value="ZergBurrowStandardAnimMacro"/>
+        <Macros value="ZergSmallBurrowEffects"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <On Terms="AbilMorph.MorphZerglingToBaneling.Finish; MorphTo Zergling; !AbilKey BurrowUp" Send="Create"/>
+        <On Terms="AbilMorph.MorphZerglingToBaneling.Start; MorphFrom Zergling; !AbilKey BurrowDown" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom Zergling; MorphTo ZerglingBurrowed" Send="AnimClear Burrow"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo Zergling; MorphFrom ZerglingBurrowed" Send="AnimBracketStop Burrow"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo Zergling; MorphFrom ZerglingBurrowed" Send="AnimClear Burrow"/>
+        <On Terms="ActorCreation; ValidateUnit ZerglingUpgraded" Send="ModelSwap ZerglingUpgrade"/>
+        <On Terms="Upgrade.zerglingmovementspeed.Add" Send="ModelSwap ZerglingUpgrade"/>
+        <On Terms="Upgrade.zerglingmovementspeed.Add; ValidateUnit IsBuried" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgradedDeathByAcid" Send="DeathCustomize UpgradedAcid"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgradedDeathByFire" Send="DeathCustomize UpgradedFire"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgradedDeathByEviscerate" Send="DeathCustomize UpgradedEviscerate"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgraded" Send="DeathCustomize Upgrade"/>
+        <On Terms="UnitMovementUpdate.*.Walk; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On Terms="UnitBirth.WaveRunnerZergling" Send="TerrainSquibActivateGroup RippleStandard"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo Zergling; MorphFrom ZerglingBurrowed" Send="TerrainSquibActivateGroup RippleStandard"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo ZerglingBurrowed; MorphFrom Zergling" Send="TerrainSquibDeactivate"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Zergling_Land"/>
+        <Model value="Zergling2"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <BuildModel value="Zergling2"/>
+        <DeathArray index="Normal" ModelLink="ZerglingDeath2" SoundLink="Zergling_Explode2"/>
+        <DeathArray index="Disintegrate" ModelLink="ZerglingDeathAcid2" SoundLink="Uni_DeathFXAcid2"/>
+        <DeathArray index="Eviscerate" ModelLink="ZerglingDeathEviscerate2" SoundLink="Zergling_DeathFXEviscerate2"/>
+        <DeathArray index="Fire" ModelLink="ZerglingDeathFire2" SoundLink="Zergling_DeathFXFire2"/>
+        <DeathCustoms index="0" ModelLink="ZergSmallUnitDeathLow2"/>
+        <DeathCustoms index="1" ModelLink="ProtossSmallUnitDeathLow2"/>
+        <DeathCustoms index="2" ModelLink="TerranSmallUnitDeathLow2"/>
+        <DeathCustoms index="3" ModelLink="ZergSmallUnitDeathLow2"/>
+        <DeathCustoms index="4" ModelLink="Invisible2"/>
+        <DeathCustoms ModelLink="ZerglingUpgradeDeath2" SoundLink="Zergling_Explode2" Name="Upgrade"/>
+        <DeathCustoms ModelLink="ZerglingUpgradeDeathFire2" SoundLink="Zergling_DeathFXFire2" Name="UpgradedFire"/>
+        <DeathCustoms ModelLink="ZerglingUpgradeDeathAcid2" SoundLink="Uni_DeathFXAcid2" Name="UpgradedAcid"/>
+        <DeathCustoms ModelLink="ZerglingUpgradeDeathEviscerate2" SoundLink="Zergling_DeathFXEviscerate2" Name="UpgradedEviscerate"/>
+        <DeathCustoms ActorModel="ZerglingDeathRagdoll" ModelLink="ZerglingDeathRagdoll2" Name="RagdollBasic">
+            <BodySquibs Name="FireOnMetal"/>
+            <BodySquibs Name="Blood" IsFallback="1"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollSiegeTank" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollBaneling" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollUltraUnburrow" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms ActorModel="ZerglingSpineCrawlerHurlDeathRagdoll" ModelLink="ZerglingDeathRagdoll2" Name="RagdollSpineCrawlerHurl"/>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PlacementModel value="Zergling2"/>
+        <PortraitModel value="ZerglingPortrait2"/>
+        <TerrainSquibs>
+            <GroupName value="RippleStandard"/>
+            <MovementDistance value="0.250000,0.250000"/>
+            <IdlePeriod value="0.200000,0.400000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleTiny"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="3.1328"/>
+        <BarOffset value="30"/>
+        <BarWidth value="36"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Zerg-Zergling.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-zerg-zergling.dds"/>
+        <HighlightTooltip value="Unit/Name/Zergling2"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <MovementHerdNode value="HerdNode_ZergSmall"/>
+        <SoundArray index="Ready" value="Zergling_Ready2"/>
+        <SoundArray index="What" value="Zergling_What2"/>
+        <SoundArray index="Yes" value="Zergling_Yes2"/>
+        <SoundArray index="Attack" value="Zergling_Attack2"/>
+        <SoundArray index="Pissed" value="Zergling_Pissed2"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-zergling.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-Zergling.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSound id="Zergling_Death">
+        <Sound value=""/>
+    </CActorSound>
+    <CActorSound id="Zergling_Death2" parent="SoundOneShot">
+        <On Terms="UnitDeath.WaveRunnerZergling; PassChance 25.000000" Send="Create"/>
+        <On Terms="UnitDeath.ZerglingBurrowed; PassChance 25.000000" Send="Create"/>
+    </CActorSound>
+</Catalog>
