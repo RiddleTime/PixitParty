@@ -7,3 +7,6 @@ PixitParty is a scalable custom-map/arcade-map utilizing the Galaxy coding langu
 
 ## What will it become?
 The idea is to incorperate multiple mini-games into 1 map. This by using Galaxy as much as possible.
+
+## How to edit the Scripts folder? ##
+[Visual Studio Code Galaxy Extension](https://github.com/Talv/vscode-sc2-galaxy)
